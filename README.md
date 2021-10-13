@@ -18,7 +18,7 @@ Of course you would have to do this for all of the source files that are require
 This will not compile on windows and if you do get it to compile it uses UNIX only headers so you would have to implement those functions yourselfs
 
 ### How to Use
-You can use this in 2 ways. I wrote this in C++ because it was easier to take a OOP design for a GUI so this is not compatible with C. HOWEVER, you can include the executable in the folder of your C program and pipe the output of this program into yours. So, you can use this with C.
+You can use this in 2 ways. I wrote this in C++ because it was easier to take a OOP design for a GUI so this is not compatible with C. HOWEVER, you can include the executable in the folder of your C program and pipe the output of this program into yours. So, you can use this with C. You can get a executable from the Release tab.
 
 ### If you are going to use this from the command line, you can use it like so (C compatible)
 ```
