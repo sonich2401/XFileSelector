@@ -23,6 +23,10 @@ Contact me at vgngamingnetwork@gmail.com if you need to contact me
 #include <iostream>
 
 const char* NAME_OF_CREATOR = "Software made by RenDev#2616, vgngamingnetwork@gmail.com";
+const char* DATE_OF_BUILD = "BUILD DATE: "DATE;
+const char* VERSION_NUMBER = "VERSION NUMBER: "VER;
+const char* PROGRAM_NAME = PROG_NAME;
+
 
 int main(int argc, char* argv[]){
     FileSelect * win;

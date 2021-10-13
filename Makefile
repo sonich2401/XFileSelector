@@ -37,7 +37,7 @@ S_FILES := $(foreach dir,$(SOURCES),  $(wildcard $(dir)/*.s) ) $(wildcard *.s)
 O_FILES = $(abspath $(addprefix $(ODIR)/, $(CPP_FILES:.cpp=.o)))
 
 
-VERSION := 0.0
+VERSION := 1.0
 BUILD := $(shell basename $(CURDIR)).linux
 DEFINE_PREFIX = -
 OS_CLEAR = clear
