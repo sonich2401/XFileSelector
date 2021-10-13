@@ -28,6 +28,10 @@ This will make the size of the window 500 x 500. If you would like a different s
 ```
 ./EXECUTABLE_NAME "<TITLE OF WINDOW>" <WIDTH> <HEIGHT>
 ```
+
+#### WARNING:
+If someone clicks the "Cancel" button, it will return the string "...END" which is an Invalid File name for UNIX file systems so it is safe to assume that this will never be a file on your hard drive. Look for this string if the user cancels the window
+
 ##### WARNING:
 You MUST have the title of the window in quotes so that argv intruperites it as one argument
 
