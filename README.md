@@ -2,7 +2,7 @@
 A minimal dependency file selector for Xlib compatible OS'es
 
 ### Why did I make this?
-I tried to find a file selector on Linux for my [Super Mario 64 Save File Converter](https://github.com/sonich2401/SM64_Save_File_Converter) but the ones that I found are not pre-installed on certian Linux distros. I wanted to have a file selector that works on any system with the least dependancies.
+I tried to find a file selector on Linux for my [Super Mario 64 Save File Converter](https://github.com/sonich2401/SM64_Save_File_Converter) but the ones that I found are not pre-installed on certian Linux distros. I wanted to have a file selector that works on any system with the least dependancies. Not only does it work on more devices, but it also takes up little memory/RAM and barely uses any CPU. I have a old laptop so those resources mean everything to me.
 
 ### Compiling
 To build this program, you must use make. CD into the folder and type in
@@ -75,3 +75,11 @@ int main() {
 }
 ```
 This will fill window_return with the selected file/folder and the std::cout will print the folder/file that was chosen.
+
+## What can you expect the program to look like
+I am using basic Xlib functions which is very restricting. There is 0 calls to OpenGL in my program (unless Xlib does that in the backend idk). This means that the file selector doesn't look very "Modern" but I have tried to give it a dark theme that looks acceptable.
+
+To open a folder, double click the folder. Folders are marked in Light Blue. Files are white. You can see what file/folder is selected by seeing that the background of the button is Very Dark Grey.
+Here is a screenshot of what it looks like
+![Screenshot_2021-10-13_16-43-58](https://user-images.githubusercontent.com/34013705/137227652-b91e722c-8b1d-403d-9f2d-fc34143b1870.png)
+It has all modern functionality including scrolling and quick links. Eventually, I hope to add buttons that allow you to create files and folders within this program just like modern file mangaers.
