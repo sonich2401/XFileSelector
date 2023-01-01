@@ -21,10 +21,24 @@ Contact me at vgngamingnetwork@gmail.com if you need to contact me about this li
 #include <string>
 #include <iostream>
 
-const char* NAME_OF_CREATOR = "Software made by RenDev#2616, vgngamingnetwork@gmail.com";
-const char* DATE_OF_BUILD = "BUILD DATE: "DATE;
-const char* VERSION_NUMBER = "VERSION NUMBER: "VER;
-const char* PROGRAM_NAME = PROG_NAME;
+static const char* NAME_OF_CREATOR = "Software made by RenDev#2616, vgngamingnetwork@gmail.com";
+static const char* DATE_OF_BUILD = "BUILD DATE: "DATE;
+static const char* VERSION_NUMBER = "VERSION NUMBER: "VER;
+static const char* PROGRAM_NAME = PROG_NAME;
+
+#include <dirent.h>
+static char DLL_PATH[PATH_MAX];
+
+static char* dllEntry(char* title){
+    FileSelect* win = new FileSelect((std::string)title, {SCREEN_W, SCREEN_H}, true);
+
+    std::string path_chosen;
+    win->Start(&path_chosen);
+    if(path_chosen.size() >= PATH_MAX) return NULL;
+    strcpy(DLL_PATH, path_chosen.c_str());
+
+    return DLL_PATH;
+}
 
 
 int main(int argc, char* argv[]){
